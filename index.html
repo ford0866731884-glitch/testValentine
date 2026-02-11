@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <title>For You 💌</title>
+    <link rel="stylesheet" href="envelope.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="envelope-wrap" onclick="openLetter()">
+      <div class="envelope">
+        <div class="flap"></div>
+        <div class="letter">💗</div>
+      </div>
+      <p>Tap to open</p>
+    </div>
+
+    <script>
+      function openLetter() {
+        document.querySelector(".envelope").classList.add("open");
+        setTimeout(() => {
+          window.location.href = "main.html";
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
